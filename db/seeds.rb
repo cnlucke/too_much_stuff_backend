@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+image_names = ["monster"]
+
+image_names.each do |item|
+  Item.create(name: item, src: "http://localhost:3000/assets/#{item}.jpg")
+end
