@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-image_names = ["monster"]
+image_names = ["monster", "monster2", "monster3", "monster4"]
 
 image_names.each do |item|
-  Item.create(name: item, src: "http://localhost:3000/assets/#{item}.jpg")
+  Item.create(name: item, src: "http://localhost:3000/assets/#{item}.png")
 end
