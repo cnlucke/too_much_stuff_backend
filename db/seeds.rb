@@ -11,3 +11,9 @@ image_names = ["monster", "monster2", "monster3", "monster4", "donut", "green_so
 image_names.each do |item|
   Item.find_or_create_by(name: item, src: "http://localhost:3000/assets/#{item}.png")
 end
+
+user_names = ["Sam", "Alex", "Joshua", "Logan", "Matthew", "Samantha", "Amanda", "Robin", "Amber", "Hailey", "Eleanor", "Emily"]
+
+user_names.each do |user|
+  User.create(username: user, password: "password")
+end
