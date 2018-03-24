@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
-    render json: @users, each_serializer: ItemsSerializer
+    render json: @users, each_serializer: UsersSerializer
   end
 
   # POST /users
@@ -36,7 +36,7 @@ class UsersController < ApplicationController
   # DELETE /users/1.json
   def destroy
     @user.destroy
-      render json: { head :no_content }
+    render json: @user.errors, status: :unprocessable_entity
   end
 
   private
