@@ -6,6 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
+
+
 image_names = ["monster", "monster2", "monster3", "monster4", "donut", "green_sock", "horse", "lollipop", "pencil", "record", "red_car", "taco"]
 
 image_names.each do |item|
