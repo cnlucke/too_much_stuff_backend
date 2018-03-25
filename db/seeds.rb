@@ -8,8 +8,7 @@
 
 
 
-
-image_names = ["monster", "monster2", "monster3", "monster4", "donut", "green_sock", "horse", "lollipop", "pencil", "record", "red_car", "taco"]
+image_names = ["monster", "monster2", "monster3", "monster4", "donut", "green_sock", "horse", "lollipop", "pencil", "record", "red_car", "taco", "tennis_ball", "plant", "lipstick", "alien", "bleach", "california_raison", "capri_sun", "charlie_brown", "cockroach", "comic_book_guy", "forest_gump", "grimace", "hatchet", "ice_pop", "money", "mr_rush", "mrs_piggy", "onion", "pizza", "pepto", "puppy", "purple_crystal", "ranch", "sidekick", "skull", "spinner", "spork", "uno" ]
 
 image_names.each do |item|
   Item.find_or_create_by(name: item, src: "http://localhost:3000/assets/#{item}.png")
