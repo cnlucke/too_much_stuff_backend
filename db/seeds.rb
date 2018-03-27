@@ -17,5 +17,5 @@ end
 user_names = ["Sam", "Alex", "Joshua", "Logan", "Matthew", "Samantha", "Amanda", "Robin", "Amber", "Hailey", "Eleanor", "Emily"]
 
 user_names.each do |user|
-  User.create(username: user, password: "password")
+  User.create(username: user)
 end
